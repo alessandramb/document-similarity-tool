@@ -1,5 +1,8 @@
 import os
 import sys
+import sphinx_rtd_theme
+
+
 sys.path.insert(0, os.path.abspath('../src'))
 
 # Project information
@@ -18,7 +21,7 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # HTML theme settings
-html_theme = 'sphinx_rtd_theme'
+html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_static_path = ['_static']
 
