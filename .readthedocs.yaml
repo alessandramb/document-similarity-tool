@@ -5,7 +5,7 @@ build:
   tools:
     python: "3.10"  # Note: version as string
   git:
-    clone_branch_override: "master"  # String format
+    clone_branch_override: "main"  # String format
 
 sphinx:
   configuration: docs/conf.py
