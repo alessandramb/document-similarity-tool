@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docsim"
+version = "1.0.0"
+description = "Document similarity comparison tool"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+
+dependencies = [
+    "reportlab>=3.6",
+    "pytesseract>=0.3.10",
+    "python-docx>=0.8.11",
+    "scikit-learn>=1.0",
+    "pymupdf>=1.22.3",
+    "pdf2image>=1.16.3",
+    "tqdm>=4.64.1"
+]
+
+[project.scripts]
+docsim = "docsim.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black>=22.0",
+    "flake8>=4.0",
+    "mypy>=0.900"
+]
