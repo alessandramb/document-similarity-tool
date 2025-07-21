@@ -19,7 +19,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # HTML theme settings
 html_theme = 'sphinx_rtd_theme'
-html_theme_path = ["_themes",]
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_static_path = ['_static']
 
 # Create the _static directory if it doesn't exist
