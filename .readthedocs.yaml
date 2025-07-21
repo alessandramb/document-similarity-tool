@@ -18,6 +18,3 @@ python:
   install:
     - method: pip
       path: .
-    - method: pip
-      packages:
-        - sphinx_rtd_theme
